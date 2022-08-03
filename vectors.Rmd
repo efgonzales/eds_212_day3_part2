@@ -44,5 +44,19 @@ bananas %*% apples
 #if vectors were orthogonal/perpendicular, dot product would be zero.
 
 ```
+## Matrices
 
+```{r}
+my_values <- seq(from = 1, to = 10) #"length = 200" to set sequence length to 200 values 
+
+my_matrix <- matrix(data = my_values, nrow = 2, ncol = 5, byrow = TRUE)
+my_matrix
+
+5 * my_matrix
+class(my_matrix) #important to check class of data, especially after importing
+```
+
+```{r}
+glimpse(penguins) #returns annotated version of class for each variable in console. similar to class()
+```
 
