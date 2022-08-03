@@ -1,0 +1,48 @@
+---
+title: "Creating & working with vectors"
+author: "Elise Gonzales"
+date: "2022-08-03"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Make vectors
+"c()"
+
+```{r}
+marmots <- c("blue", "green", 4, "yellow")
+
+#check class of objects: "character"...to determine how you analyze data.
+class(marmots)
+```
+
+```{r}
+pika <- c(12.4, 6.8, 2.9, 8.8, 8.5)
+class(pika)
+
+#Scalar multiplier
+
+5.2 * pika #this will run & show answer in console, NOT stored in environment.You'd have to store it to some name...
+scalar_pika <- 5.2 * pika
+scalar_pika #to have it show the vector on your knitted document
+```
+
+```{r}
+#matching lengths (shown in environment)...  can add/subtract/etc the two vectors
+bananas <- c(1, 2, 3)
+apples <- c(6, 7, 8)
+
+bananas + apples
+bananas - apples
+
+#dot product (%*%)
+bananas %*% apples
+#if vectors were orthogonal/perpendicular, dot product would be zero.
+
+```
+
+
