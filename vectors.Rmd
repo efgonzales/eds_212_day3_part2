@@ -60,3 +60,8 @@ class(my_matrix) #important to check class of data, especially after importing
 glimpse(penguins) #returns annotated version of class for each variable in console. similar to class()
 ```
 
+## Commit to github by writing commands in terminal (instead of by using buttons)
+git add - A
+git commit - M ""
+git push
+
